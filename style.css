@@ -143,7 +143,6 @@ body {
 
 .icon {
     margin:0 0.75rem;
-    /* padding: 0 0.75rem; */
 }
 
 .category-title {
@@ -153,7 +152,6 @@ body {
 
 .scorefromhundred {
     margin: 0 0.75rem;
-    /* padding: 0 0.75rem; */
     font-weight: 800;
     color: hsla(224, 30%, 27%, 0.5);
 }
@@ -173,8 +171,29 @@ body {
     font-size: 1rem;
 }
 
-/* @media(min-width: 22rem) {
-    .category-title {
-        margin-right: 38.8%;
+@media(min-width: 48rem) {
+    body {
+        justify-content: center;
+        align-items: center;
     }
-} */
+    .general {
+        flex-direction: row;
+        align-items: stretch;
+        max-width: 42rem;
+    }
+    .result {
+        box-sizing: border-box;
+        flex-basis: 50%;
+        border-radius: 2rem;
+        padding: 1rem 4rem;
+    }
+    .summary {
+        box-sizing: border-box;
+        flex-basis: 50%;
+        border: 1px solid black;
+    }
+
+    .button {
+        margin: 1rem 0;
+    }
+}
