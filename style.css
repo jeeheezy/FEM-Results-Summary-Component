@@ -171,6 +171,11 @@ body {
     font-size: 1rem;
 }
 
+.button:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue)) ;
+}
+
 @media(min-width: 48rem) {
     body {
         justify-content: center;
@@ -180,20 +185,25 @@ body {
         flex-direction: row;
         align-items: stretch;
         max-width: 42rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        box-shadow: 0 0 2rem hsla(234, 85%, 45%, 0.1);
     }
     .result {
         box-sizing: border-box;
         flex-basis: 50%;
-        border-radius: 2rem;
+        border-radius: 0 2rem 2rem 0;
         padding: 1rem 4rem;
     }
     .summary {
         box-sizing: border-box;
         flex-basis: 50%;
-        border: 1px solid black;
     }
 
     .button {
         margin: 1rem 0;
+    }
+    .attribution {
+        margin-top: 1rem;
     }
 }
